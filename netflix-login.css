@@ -36,7 +36,16 @@ html, body {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .logo {
@@ -45,7 +54,7 @@ html, body {
 }
 
 .logo-img {
-  height: 34px;
+  height: 42px;
   width: auto;
   filter: none;
 }
@@ -55,6 +64,134 @@ html, body {
   color: var(--netflix-red);
   font-size: 32px;
   letter-spacing: 4px;
+}
+
+.sign-in-btn {
+  background: var(--netflix-red);
+  border: 1px solid var(--netflix-red);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.sign-in-btn:hover,
+.sign-in-btn:focus {
+  background: #f6121d;
+  transform: translateY(-1px);
+}
+
+.language-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-btn .icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 88px);
+  padding: 0 24px;
+}
+
+.hero-copy {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  white-space: normal;
+}
+
+.hero p {
+  margin: 24px auto 0;
+  max-width: 620px;
+  font-size: clamp(1.05rem, 1.6vw, 1.4rem);
+  color: #f3f3f3;
+  line-height: 1.5;
+}
+
+.cta-text {
+  margin: 24px auto 0;
+  font-size: 1rem;
+  color: #f3f3f3;
+}
+
+.cta-form {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px auto 0;
+  max-width: 640px;
+  width: 100%;
+}
+
+.cta-form input {
+  flex: 1 1 320px;
+  min-width: 260px;
+  padding: 16px 18px;
+  border-radius: 4px;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1rem;
+  height: 56px;
+}
+
+.cta-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cta-form button {
+  flex: 0 0 auto;
+  min-width: 160px;
+  padding: 16px 22px;
+  border: none;
+  border-radius: 4px;
+  background: var(--netflix-red);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-note {
+  margin-top: 18px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.hero-note a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* Center Container */
@@ -122,6 +259,159 @@ input::placeholder {
   font-size: 14px;
   margin-top: 8px;
 }
+
+/* Forgot password page */
+.forgot-card {
+  width: 420px;
+  max-width: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  color: #111;
+  padding: 56px 48px;
+  border-radius: 10px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.forgot-card h1 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  color: #111;
+}
+
+.forgot-card .form-subtitle {
+  margin: 0 0 26px;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.forgot-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #222;
+}
+
+.forgot-card input[type="email"],
+.forgot-card input[type="text"],
+.forgot-card input[type="password"] {
+  background: #f3f3f3;
+  color: #111;
+  border: 1px solid #d3d3d3;
+}
+
+.forgot-card input:focus {
+  outline: 2px solid rgba(0, 113, 235, 0.25);
+  outline-offset: 1px;
+}
+
+.forgot-card .btn {
+  width: 100%;
+  background: #0071eb;
+  margin-top: 10px;
+}
+
+.method-group {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #d6d6d6;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.radio-option input {
+  accent-color: #0071eb;
+}
+
+.radio-option:hover,
+.radio-option input:focus-visible + span {
+  border-color: #0071eb;
+}
+
+.info-text {
+  margin: 0 0 18px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.forgot-help {
+  display: inline-block;
+  margin-top: 20px;
+  color: #0071eb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-help:hover {
+  text-decoration: underline;
+}
+
+.page-footer {
+  padding: 24px 20px 32px;
+  color: #d8d8d8;
+  font-size: 13px;
+  text-align: center;
+}
+
+.footer-top p {
+  margin: 0 0 18px;
+}
+
+.footer-top a,
+.footer-links a {
+  color: #d8d8d8;
+  text-decoration: none;
+}
+
+.footer-top a:hover,
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: #d8d8d8;
+}
+
+@media (max-width: 520px) {
+  .header {
+    padding: 20px 16px;
+  }
+
+  .signin-card {
+    padding: 40px 24px;
+  }
+
+  .forgot-card {
+    width: 100%;
+    padding: 40px 24px;
+  }
+
+  .footer-links {
+    gap: 12px 14px;
+  }
+}
+
 
 .options input {
   margin-right: 6px;
