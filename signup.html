@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - Sign Up</title>
+  <link rel="stylesheet" href="netflix-login.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="header">
+    <a href="login.html" class="brand">
+      <img src="logo.svg" alt="Netflix" class="logo-img">
+    </a>
+  </header>
+
+  <main class="center">
+    <section class="signin-card" aria-labelledby="signup-heading">
+      <h1 id="signup-heading">Sign Up</h1>
+
+      <form action="#" method="post" autocomplete="on">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email" required>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Password" required>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm password" required>
+
+        <button class="btn" type="submit">Sign Up</button>
+      </form>
+
+      <p class="signup">Already have an account? <a href="login.html">Sign in</a>.</p>
+      <p class="recaptcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+    </section>
+  </main>
+</body>
+</html>
