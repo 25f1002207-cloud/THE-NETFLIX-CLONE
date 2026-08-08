@@ -1,0 +1,346 @@
+/* Large tablets and small desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .netflix-content {
+        margin-left: 1rem;
+    }
+
+    .top-10 {
+        margin-left: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .show-title {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        width: 16rem;
+        height: 10rem;
+    }
+
+    .hover-card {
+        width: 16rem;
+        height: 10rem;
+    }
+
+    .card-1 { width: 13rem; }
+    .card-2 { width: 10rem; }
+    .card-3 { width: 12rem; }
+    .card-4 { width: 14rem; }
+    .card-5 { width: 15rem; }
+    .card-6 { width: 7rem; }
+    .card-7 { width: 13rem; }
+    .card-8 { width: 14rem; }
+    .card-9 { width: 16rem; }
+    .card-10 { width: 9rem; }
+
+    .numbers {
+        font-size: 240px;
+        margin-right: -55px;
+    }
+
+    .poster {
+        width: 130px;
+        height: 178px;
+    }
+
+    .shows-number {
+        font-size: 210px;
+        margin-right: -38px;
+    }
+
+    .show-poster {
+        width: 100px;
+        height: 155px;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .content-area {
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .netflix-content {
+        margin-top: 1.5rem;
+        margin-left: 0.8rem;
+    }
+
+    .top-10 {
+        margin-top: 1.5rem;
+        margin-left: 0.8rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .show-title {
+        font-size: 1rem;
+    }
+
+    /* Disable hover cards on touch devices */
+    .card:hover .hover-card,
+    .show-card:hover .hover-card {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate(-50%, -50%) scale(0.75);
+    }
+
+    .cards-wrapper .card:first-child:hover .hover-card,
+    .cards-wrapper .card:last-child:hover .hover-card {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .card {
+        width: 12rem;
+        height: 7.5rem;
+    }
+
+    .card-1 { width: 10rem; }
+    .card-2 { width: 8rem; }
+    .card-3 { width: 9rem; }
+    .card-4 { width: 11rem; }
+    .card-5 { width: 12rem; }
+    .card-6 { width: 6rem; }
+    .card-7 { width: 10rem; }
+    .card-8 { width: 11rem; }
+    .card-9 { width: 13rem; }
+    .card-10 { width: 7rem; }
+
+    .cards-wrapper {
+        gap: 6px;
+    }
+
+    .numbers {
+        font-size: 160px;
+        margin-right: -32px;
+        -webkit-text-stroke: 2px #4a4a4a;
+    }
+
+    .poster {
+        width: 85px;
+        height: 115px;
+    }
+
+    .top-10-cards {
+        gap: 16px;
+    }
+
+    .show-card {
+        width: 12rem;
+        height: 6.8rem;
+    }
+
+    .show-card .hover-card {
+        width: 12rem;
+        height: 6.8rem;
+    }
+
+    .shows-number {
+        font-size: 140px;
+        margin-right: -25px;
+        -webkit-text-stroke: 2px #4a4a4a;
+    }
+
+    .show-poster {
+        width: 80px;
+        height: 102px;
+    }
+
+    .buttons .play-btn,
+    .show-card .buttons .play-btn {
+        font-size: 0.75rem;
+        padding: 2px 6px;
+        bottom: 8px;
+    }
+
+    .buttons i,
+    .show-card .buttons i {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+        bottom: 8px;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .content-area {
+        margin-left: 0.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .netflix-content {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .top-10 {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    .show-title {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 8rem;
+        height: 5rem;
+    }
+
+    .card-1 { width: 8rem; }
+    .card-2 { width: 6.5rem; }
+    .card-3 { width: 7.5rem; }
+    .card-4 { width: 8.5rem; }
+    .card-5 { width: 9rem; }
+    .card-6 { width: 5rem; }
+    .card-7 { width: 8rem; }
+    .card-8 { width: 8.5rem; }
+    .card-9 { width: 9.5rem; }
+    .card-10 { width: 6rem; }
+
+    .cards-wrapper {
+        gap: 4px;
+    }
+
+    .numbers {
+        font-size: 110px;
+        margin-right: -20px;
+        -webkit-text-stroke: 1.5px #4a4a4a;
+    }
+
+    .poster {
+        width: 60px;
+        height: 80px;
+    }
+
+    .top-10-cards {
+        gap: 10px;
+    }
+
+    .show-card {
+        width: 9rem;
+        height: 5rem;
+    }
+
+    .show-card .hover-card {
+        width: 9rem;
+        height: 5rem;
+    }
+
+    .shows-number {
+        font-size: 100px;
+        margin-right: -18px;
+        -webkit-text-stroke: 1.5px #4a4a4a;
+    }
+
+    .show-poster {
+        width: 60px;
+        height: 72px;
+    }
+
+    .show-cards-wrapper {
+        gap: 1px;
+        margin-top: 0.5rem;
+    }
+
+    .buttons .play-btn,
+    .show-card .buttons .play-btn {
+        font-size: 0.65rem;
+        padding: 1px 5px;
+        bottom: 6px;
+        left: 6px;
+    }
+
+    .buttons i,
+    .show-card .buttons i {
+        width: 20px;
+        height: 20px;
+        font-size: 0.65rem;
+        bottom: 6px;
+        right: 6px;
+    }
+
+    .progress-container {
+        height: 3px;
+    }
+}
+
+/* Extra small devices (max-width: 360px) */
+@media (max-width: 360px) {
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .show-title {
+        font-size: 0.85rem;
+    }
+
+    .card {
+        width: 6.5rem;
+        height: 3.5rem;
+    }
+
+    .card-1 { width: 6.5rem; }
+    .card-2 { width: 5.5rem; }
+    .card-3 { width: 6rem; }
+    .card-4 { width: 7rem; }
+    .card-5 { width: 7.5rem; }
+    .card-6 { width: 4rem; }
+    .card-7 { width: 6.5rem; }
+    .card-8 { width: 7rem; }
+    .card-9 { width: 8rem; }
+    .card-10 { width: 5rem; }
+
+    .numbers {
+        font-size: 90px;
+        margin-right: -22px;
+        -webkit-text-stroke: 1.5px #4a4a4a;
+    }
+
+    .poster {
+        width: 65px;
+        height: 88px;
+    }
+
+    .show-card {
+        width: 7.5rem;
+        height: 4.2rem;
+    }
+
+    .shows-number {
+        font-size: 80px;
+        margin-right: -14px;
+        -webkit-text-stroke: 1.5px #4a4a4a;
+    }
+
+    .show-poster {
+        width: 45px;
+        height: 59px;
+    }
+
+    .buttons .play-btn,
+    .show-card .buttons .play-btn {
+        display: none;
+    }
+
+    .buttons i,
+    .show-card .buttons i {
+        width: 18px;
+        height: 18px;
+        font-size: 0.6rem;
+    }
+}
