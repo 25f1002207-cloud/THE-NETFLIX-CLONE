@@ -1,0 +1,151 @@
+body
+{
+    background-color: black;
+}
+/* faq main section */
+ /* .faq-section
+{
+    max-width:1000px;
+    margin:70px auto;
+    padding: 0 20px;
+}
+.faq-container
+{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.faq-box
+{
+    background-color: #2d2d2d;
+    border-radius:2px;
+    overflow: hidden;
+    max-width:1000px;
+    min-height:80px;
+} */
+/* clickable question bar */
+.faq-question
+{
+    padding:28px 24px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select:none;
+    list-style: none;
+    color:white;
+}
+.faq-question.faq-question::-webkit-details-marker
+{
+    display: none;
+}
+.faq-icon{
+    font: size 2rem;
+    font-weight:300;
+    line-height: 1;
+    display:inline-block;
+    transition: transform 0.25s ease-in-out;
+}
+.faq-box[open] .faq-icon
+{
+    transform:rotate(45deg);
+}
+.faq-answer{
+    padding: 24px;
+    background-color: #2d2d2d;
+    border-top:1px solid #111;
+    font-size:1.5rem;
+    line-height: 1.5;
+    color:white;
+}
+.ff{
+    color:white;
+}
+.watch
+{
+    color:white;
+    padding: 0 420px;
+}
+.mail
+{
+    background-color: black;
+    border:2px solid white;
+    padding:20px 120px;
+    width:55%;
+    border-radius: 5px;
+}
+.free{
+    padding:20px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:5px;
+}
+.zero
+{
+    background-color: orangered;
+    border-radius:3px;
+    border:1px solid orangered;
+    padding:12px 20px;
+    font-size:1.5rem;
+    color:white;
+}
+.valid
+{
+    color:#bbbaba;
+    margin: 0;
+    padding:0 150px;
+    font-size:1.1rem;
+    margin-bottom: 50px;
+} 
+
+.faq-hero
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:0 100px;
+}
+.faq-hero a {
+    color:#bbbaba;
+    text-decoration: none;
+}
+
+.faq-hero a:hover {
+    text-decoration: underline;
+}
+
+.faq-use{
+    padding:10px;
+}
+.faq-use li
+{
+    padding:8px;
+}
+.lan
+{
+    padding:10px 150px;
+}
+.lan select
+{
+    padding: 7px 25px;
+    border-radius: 5px;
+    color:white;
+    background-color: black;
+    font-size:16px;
+    margin-bottom: 30px;
+}
+.last
+{
+    color:#bbbaba;
+    margin: 0;
+    padding:0 150px;
+    font-size:1rem;
+    margin-top: -20px;
+}
+.clear
+{
+    color:#5f5f5f;
+    margin-top:30px;
+}
