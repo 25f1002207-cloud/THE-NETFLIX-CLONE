@@ -307,13 +307,13 @@
 
     .numbers {
         font-size: 90px;
-        margin-right: -22px;
+        margin-right: -18px;
         -webkit-text-stroke: 1.5px #4a4a4a;
     }
 
     .poster {
-        width: 65px;
-        height: 88px;
+        width: 45px;
+        height: 67px;
     }
 
     .show-card {
