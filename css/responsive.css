@@ -1,3 +1,5 @@
+/* Main section, shows and movies pages  */
+
 /* Large tablets and small desktops (max-width: 1024px) */
 @media (max-width: 1024px) {
     .netflix-content {
@@ -343,4 +345,12 @@
         height: 18px;
         font-size: 0.6rem;
     }
+}
+
+/* login and signup  */
+
+@media (max-width: 520px) {
+  .header {
+    padding: 20px 16px;
+  }
 }
