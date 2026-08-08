@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone Collaborative Project</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/hero.css">
 </head>
@@ -35,15 +34,48 @@
                 </button>
                 <div class="settings">
                     <ul>
-                        <li><a href="#" class="setting-options">Manage Profiles</a></li>
-                        <li><a href="#" class="setting-options">Account</a></li>
-                        <li><a href="#" class="setting-options">Help Center</a></li>
+                        <li><a href="#">Manage Profiles</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help Center</a></li>
                         <li><hr></li>
-                        <li><a href="#" class="setting-options">Sign Out</a></li>
+                        <li><a href="#">Sign Out</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+
+
+
+    <section class="hero">
+                
+        <div class="slider">
+
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+
+            <div class="slides">
+                <div class="slide"><img src="Images/hero_1.jpg" alt="Show 1"></div>
+                <div class="slide"><img src="Images/hero_2.jpg" alt="Show 2"></div>
+                <div class="slide"><img src="Images/hero_3.jpg" alt="Show 3"></div>
+                <div class="slide"><img src="Images/hero_4.jpg" alt="Show 4"></div>
+                <div class="slide"><img src="Images/hero_5.jpg" alt="Show 5"></div>
+            </div>
+
+            <div class="navigation-dots">
+                <label for="slide1" class="dot"></label>
+                <label for="slide2" class="dot"></label>
+                <label for="slide3" class="dot"></label>
+                <label for="slide4" class="dot"></label>
+                <label for="slide5" class="dot"></label>
+            </div>
+        
+        </div>  
+
+    </section>
+
 </body>
 </html>

@@ -143,6 +143,7 @@
   display: none;         
   z-index: 10;
   gap:20px;
+  border-radius:10px;
 }
 
 .settings ul {
@@ -165,8 +166,3 @@
 .account-related:hover .settings {
   display: block; 
 }
-
-
-
-
-
