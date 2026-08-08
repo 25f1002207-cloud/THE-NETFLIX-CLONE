@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/responsive2.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +20,155 @@
 </head>
 
 <body>
+
+    <header class="navbar">
+        <a href="index.html" target="_self">
+            <img class="nav-logo" src="Images/Netflix Logo.png">
+        </a>
+        <nav class="nav-main">
+            <ul class="nav-conatainer">
+                <li class="nav-links"><a href="index.html" class="active">Home</a></li>
+                <li class="nav-links"><a href="tvshows.html" class="active">Shows</a></li>
+                <li class="nav-links"><a href="movies.html" class="active">Movies</a></li>
+                <li class="nav-links"><a href="#" class="active">Games</a></li>
+                <li class="nav-links"><a href="#" class="active">New & Popular</a></li>
+                <li class="nav-links"><a href="#" class="active">My List</a></li>
+                <li class="nav-links"><a href="#" class="active">Browse by Languages</a></li>
+            </ul>
+        </nav>
+        <div class="nav-secondary">
+            <button class="nav-button"><img class="nav-search" src="Images/Search Icon.png"></button>
+            <button class="nav-button"><img class="nav-bell" src="Images/Notification Bell.png"></button>
+            <a class="kids_section" href="#"><img class="kids-section-logo" src="Images/Kid's Section Logo.png">
+                <p class="children">Children</p>
+            </a>
+            <div class="account-related">
+                <button class="account-related-button">
+                    <img class="user-account-logo" src="Images/User Account Logo.jpg">
+                    <img class="down-arrow" src="Images/Down Arrow.png">
+                </button>
+                <div class="settings">
+                    <ul>
+                        <li><a href="#">Manage Profiles</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+
+        <div class="slider">
+
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+
+            <div class="slides">
+
+
+                <div class="slide">
+                    <img src="Images/hero_2.jpg" alt="Stranger Things">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">STRANGER THINGS</h1>
+                        <p class="hero-description">
+                            When a young boy vanishes, a small town uncovers a mystery involving secret experiments,
+                            terrifying supernatural forces, and one strange little girl.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-play"><span class="icon">▶</span> Play</button>
+                            <button class="btn btn-info"><span class="icon">ℹ</span> More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="Images/hero_4.jpg" alt="Wednesday">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">WEDNESDAY</h1>
+                        <p class="hero-description">
+                            Smart, sarcastic, and a little dead inside, Wednesday Addams investigates a murder spree
+                            while making new friends—and foes—at Nevermore Academy.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-play"><span class="icon">▶</span> Play</button>
+                            <button class="btn btn-info"><span class="icon">ℹ</span> More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="Images/hero_3.jpg" alt="Squid Game">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">SQUID GAME</h1>
+                        <p class="hero-description">
+                            Hundreds of cash-strapped players accept a strange invitation to compete in children's
+                            games. Inside, a tempting prize awaits with deadly high stakes.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-play"><span class="icon">▶</span> Play</button>
+                            <button class="btn btn-info"><span class="icon">ℹ</span> More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="Images/hero_1.jpg" alt="One Piece">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">ONE PIECE</h1>
+                        <p class="hero-description">
+                            In a seafaring world, a young pirate captain sets out with his crew to attain the title of
+                            Pirate King, and to discover the mythical treasure known as 'One Piece'.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-play"><span class="icon">▶</span> Play</button>
+                            <button class="btn btn-info"><span class="icon">ℹ</span> More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="Images/hero_5.jpg" alt="Show 5">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">PEAKY BLINDERS</h1>
+                        <p class="hero-description">
+                            A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime
+                            boss set on moving up in the world no matter the cost.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-play"><span class="icon">▶</span> Play</button>
+                            <button class="btn btn-info"><span class="icon">ℹ</span> More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navigation-dots">
+                <label for="slide1" class="dot"></label>
+                <label for="slide2" class="dot"></label>
+                <label for="slide3" class="dot"></label>
+                <label for="slide4" class="dot"></label>
+                <label for="slide5" class="dot"></label>
+            </div>
+
+        </div>
+
+    </section>
+
     <main class="content-area">
 
         <!-- First section started here -->
@@ -4903,6 +5055,55 @@
         <!-- Sixth section ended here  -->
 
     </main>
+
+    <footer>
+
+        <div class="faq-hero">
+            <div class="faq-use">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Speed Test</a></li>
+                </ul>
+            </div>
+            <div class="faq-use">
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Legal Notices</a></li>
+                </ul>
+            </div>
+            <div class="faq-use">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Only on Netflix</a></li>
+                </ul>
+            </div>
+            <div class="faq-use">
+                <ul>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lan">
+            <select>
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+            </select>
+        </div>
+        <div class="last">
+            <p>Netflix India</p>
+            <p class="clear">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

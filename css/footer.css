@@ -1,0 +1,49 @@
+.faq-hero
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:0 100px;
+}
+.faq-hero a {
+    color:#bbbaba;
+    text-decoration: none;
+}
+
+.faq-hero a:hover {
+    text-decoration: underline;
+}
+
+.faq-use{
+    padding:10px;
+}
+.faq-use li
+{
+    padding:8px;
+    list-style-type: none;
+}
+.lan
+{
+    padding:10px 150px;
+}
+.lan select
+{
+    padding: 7px 25px;
+    border-radius: 5px;
+    color:white;
+    background-color: black;
+    font-size:16px;
+    margin-bottom: 30px;
+}
+.last
+{
+    color:#bbbaba;
+    margin: 0;
+    padding:0 150px;
+    font-size:1rem;
+    margin-top: -20px;
+}
+.clear
+{
+    color:#5f5f5f;
+    margin-top:30px;
+}
