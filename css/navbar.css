@@ -7,10 +7,12 @@
 .navbar
 {
     display:flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items:center;
+    justify-content:space-between;
     background-color:black;
-    padding: 15px 40px;
+    padding:15px 40px;
+    position:sticky;
+    z-index:100;
 }
 
 .nav-logo
@@ -104,7 +106,7 @@
 .account-related
 {
     display:flex;
-    position: relative;
+    position:relative;
     align-items: center;
 }
 
@@ -123,46 +125,51 @@
 
 .account-related-button
 {
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
+    background:transparent;
+    border:none;
+    display:flex;
+    align-items:center;
     gap:10px;
-    cursor: pointer;
-    color: white;
+    cursor:pointer;
+    color:white;
 }
 
-.settings {
-  position: absolute;
-  top: 100%;           
-  right: 0;             
-  background-color: rgba(0, 0, 0, 0.9);
-  border: 1px solid #333;
-  padding: 10px 0;
-  width: 150px;
-  display: none;         
-  z-index: 10;
-  gap:20px;
-  border-radius:10px;
+.settings 
+{
+    position:absolute;
+    top:100%;           
+    right:0;             
+    background-color:rgba(0, 0, 0, 0.9);
+    border:1px solid #333;
+    padding:10px 0;
+    width:150px;
+    display:none;         
+    z-index:101;
+    gap:20px;
+    border-radius:10px;
 }
 
-.settings ul {
-  list-style: none;
+.settings ul 
+{
+    list-style:none;
 }
 
-.settings a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 8px 15px;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+.settings a
+{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:8px 15px;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.settings a:hover {
-  text-decoration: underline;
+.settings a:hover 
+{
+    text-decoration:underline;
 }
 
-.account-related:hover .settings {
-  display: block; 
+.account-related:hover .settings 
+{
+    display:block; 
 }
