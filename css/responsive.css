@@ -8,20 +8,60 @@
 {
     .header
     {
-        padding:15px 20px;    /* Only reduce padding for items to come closer */
+        padding: 15px 20px;  /* Padding kam karo */
     }
 
     .nav-conatainer
     {
-        gap:8px;
+        gap: 6px;  /* Links ke beech gap kam */
+    }
+
+    .active
+    {
+        font-size: 15px;   /* Font thoda chota */
+        padding: 6px 10px; /* Padding kam */
     }
 
     .nav-secondary
     {
-        gap:18px;
+        gap: 15px;  /* Right side gap kam */
+    }
+
+    /* Kids section ka text hide karo, sirf logo dikhao */
+    .children
+    {
+        display: none;
+    }
+
+    .kids-section-logo
+    {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* Notification bell hide kar sakte ho agar zaroori ho */
+    .nav-bell-btn
+    {
+        display: none;
+    }
+
+    .nav-logo
+    {
+        height: 35px;
+    }
+
+    .nav-search
+    {
+        height: 22px;
+        width: 22px;
+    }
+
+    .user-account-logo
+    {
+        height: 32px;
+        width: 32px;
     }
 }
-
 
 /* ========================= */
 /* 768px - Browse Dropdown   */
