@@ -1,3 +1,250 @@
+/* Header section  */
+
+/* ========================= */
+/* 1024px - Items closer     */
+/* ========================= */
+
+@media (max-width: 1024px)
+{
+    .header
+    {
+        padding:15px 20px;    /* Only reduce padding for items to come closer */
+    }
+
+    .nav-conatainer
+    {
+        gap:8px;
+    }
+
+    .nav-secondary
+    {
+        gap:18px;
+    }
+}
+
+
+/* ========================= */
+/* 768px - Browse Dropdown   */
+/* ========================= */
+
+@media (max-width: 768px)
+{
+    .header
+    {
+        padding:12px 20px;
+    }
+
+    /* Show Browse button */
+    .browse-btn
+    {
+        display:flex;
+    }
+
+    /* Hide all nav links, show only on hover */
+    .nav-main
+    {
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        background-color:rgba(0, 0, 0, 0.95);
+        border:1px solid #333;
+        border-radius:8px;
+        padding:10px 0;
+        min-width:200px;
+        z-index:101;
+        margin-top:5px;
+    }
+
+    /* Show dropdown when hovering Browse */
+    .browse-dropdown:hover .nav-main
+    {
+        display:block;
+    }
+
+    .nav-conatainer
+    {
+        flex-direction:column;   /* Vertical dropdown */
+        gap:0;
+    }
+
+    .nav-links
+    {
+        width:100%;
+    }
+
+    .active
+    {
+        display:block;
+        padding:10px 20px;
+        border-radius:0;
+        font-size:14px;
+        color:white;
+    }
+
+    .nav-links a:hover
+    {
+        background-color:#333;
+        border-radius:0;
+        padding:10px 20px;
+    }
+
+    .nav-secondary
+    {
+        gap:18px;
+    }
+}
+
+
+/* ========================= */
+/* 480px - N Logo + Hide Bell & Children */
+/* ========================= */
+
+@media (max-width: 480px)
+{
+    .header
+    {
+        padding:10px 15px;
+    }
+
+    /* Hide full Netflix logo, show only N */
+    .nav-logo
+    {
+        display:none;
+    }
+
+    .nav-logo-n
+    {
+        display:block;
+        height:30px;
+    }
+
+    /* Hide Notification Bell */
+    .nav-bell-btn
+    {
+        display:none;
+    }
+
+    /* Hide Children text (keep the kids logo) */
+    .children
+    {
+        display:none;
+    }
+
+    .kids-section-logo
+    {
+        height:35px;
+        width:35px;
+    }
+
+    .browse-btn
+    {
+        padding:6px 12px;
+        font-size:13px;
+    }
+
+    .nav-secondary
+    {
+        gap:12px;
+    }
+
+    .nav-search
+    {
+        height:22px;
+        width:22px;
+    }
+
+    .user-account-logo
+    {
+        height:30px;
+        width:30px;
+    }
+
+    .down-arrow
+    {
+        width:10px;
+        height:10px;
+    }
+}
+
+
+/* ========================= */
+/* 360px - Extra Small       */
+/* ========================= */
+
+@media (max-width: 360px)
+{
+    .header
+    {
+        padding:8px 10px;
+    }
+
+    .nav-logo-n
+    {
+        height:26px;
+        margin-right:6px;
+    }
+
+    .browse-btn
+    {
+        padding:5px 10px;
+        font-size:12px;
+        gap:5px;
+    }
+
+    .browse-arrow
+    {
+        width:8px;
+        height:8px;
+    }
+
+    .nav-secondary
+    {
+        gap:10px;
+    }
+
+    .nav-search
+    {
+        height:20px;
+        width:20px;
+    }
+
+    .kids-section-logo
+    {
+        height:30px;
+        width:30px;
+    }
+
+    .user-account-logo
+    {
+        height:28px;
+        width:28px;
+    }
+
+    .down-arrow
+    {
+        width:9px;
+        height:9px;
+    }
+
+    .account-related-button
+    {
+        gap:6px;
+    }
+
+    /* Nav dropdown smaller */
+    .nav-main
+    {
+        min-width:180px;
+    }
+
+    .active
+    {
+        font-size:13px;
+        padding:8px 15px;
+    }
+}
+
 /* Main section, shows and movies pages  */
 
 /* Large tablets and small desktops (max-width: 1024px) */
@@ -344,6 +591,198 @@
         width: 18px;
         height: 18px;
         font-size: 0.6rem;
+    }
+}
+
+/* Footer section  */
+
+
+/* ========================= */
+/* 1024px - Small Laptops    */
+/* ========================= */
+
+@media (max-width: 1024px)
+{
+    .faq-hero
+    {
+        padding:0 60px;
+    }
+
+    .lan
+    {
+        padding:20px 60px 10px 60px;
+    }
+
+    .last
+    {
+        padding:0 60px;
+    }
+}
+
+
+/* ========================= */
+/* 768px - Tablets           */
+/* ========================= */
+
+@media (max-width: 768px)
+{
+    footer
+    {
+        padding:30px 0;
+    }
+
+    .faq-hero
+    {
+        grid-template-columns:repeat(3, 1fr);  /* 3 columns instead of 4 */
+        padding:0 40px;
+        gap:5px;
+    }
+
+    .faq-hero a
+    {
+        font-size:13px;
+    }
+
+    .faq-use
+    {
+        padding:5px;
+    }
+
+    .faq-use li
+    {
+        padding:6px 0;
+    }
+
+    .lan
+    {
+        padding:20px 40px 10px 40px;
+    }
+
+    .lan select
+    {
+        font-size:14px;
+        padding:6px 20px;
+    }
+
+    .last
+    {
+        padding:0 40px;
+        font-size:13px;
+    }
+}
+
+
+/* ========================= */
+/* 480px - Large Mobiles     */
+/* ========================= */
+
+@media (max-width: 480px)
+{
+    footer
+    {
+        padding:25px 0;
+    }
+
+    .faq-hero
+    {
+        grid-template-columns:repeat(2, 1fr);  /* 2 columns */
+        padding:0 25px;
+        gap:5px;
+    }
+
+    .faq-hero a
+    {
+        font-size:12px;
+    }
+
+    .faq-use
+    {
+        padding:5px;
+    }
+
+    .faq-use li
+    {
+        padding:5px 0;
+    }
+
+    .lan
+    {
+        padding:15px 25px 10px 25px;
+    }
+
+    .lan select
+    {
+        font-size:13px;
+        padding:6px 18px;
+    }
+
+    .last
+    {
+        padding:0 25px;
+        font-size:12px;
+    }
+
+    .clear
+    {
+        font-size:11px;
+    }
+}
+
+
+/* ========================= */
+/* 360px - Small Mobiles     */
+/* ========================= */
+
+@media (max-width: 360px)
+{
+    footer
+    {
+        padding:20px 0;
+    }
+
+    .faq-hero
+    {
+        grid-template-columns:repeat(2, 1fr);  /* Keep 2 columns */
+        padding:0 15px;
+        gap:3px;
+    }
+
+    .faq-hero a
+    {
+        font-size:11px;
+    }
+
+    .faq-use
+    {
+        padding:3px;
+    }
+
+    .faq-use li
+    {
+        padding:4px 0;
+    }
+
+    .lan
+    {
+        padding:12px 15px 8px 15px;
+    }
+
+    .lan select
+    {
+        font-size:12px;
+        padding:5px 15px;
+    }
+
+    .last
+    {
+        padding:0 15px;
+        font-size:11px;
+    }
+
+    .clear
+    {
+        font-size:10px;
+        margin-top:15px !important;
     }
 }
 

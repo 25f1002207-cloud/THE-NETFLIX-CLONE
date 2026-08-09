@@ -1,4 +1,4 @@
-.navbar
+.header
 {
     display:flex;
     align-items:center;
@@ -10,15 +10,52 @@
     z-index:100;
 }
 
+.navbar
+{
+    display:flex;
+    align-items:center;
+}
+
 .nav-logo
 {
     height:45px;
     width:auto;
+    margin-right:12px;
 }
 
-.nav-main
+/* Hide N logo by default */
+.nav-logo-n
 {
-    margin-right:200px;
+    display:none;
+    height:35px;
+    width:auto;
+    margin-right:14px;
+}
+
+/* Browse Dropdown - Hidden by default (desktop) */
+.browse-dropdown
+{
+    position:relative;
+}
+
+.browse-btn
+{
+    display:none;         /* Hidden on desktop */
+    align-items:center;
+    gap:8px;
+    background-color:#2a2a2a;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.browse-arrow
+{
+    width:10px;
+    height:10px;
 }
 
 .nav-conatainer
@@ -32,22 +69,22 @@
     list-style:none;
 }
 
-.nav-links a:hover {
-  font-weight:bold;
-  border-radius: 20px;
-  padding: 6px 16px;
-  background-color:#333333;  
-  color:#ffffff;
+.nav-links a:hover
+{
+    font-weight:bold;
+    border-radius:20px;
+    padding:6px 16px;
+    background-color:#333333;
+    color:#ffffff;
 }
 
 .active
 {
     text-decoration:none;
-    color:#b3b3b3;;
-    font-family:Arial, Helvetica, sans-serif;
+    color:#b3b3b3;
     font-size:17px;
-    padding: 6px 16px;              
-    border-radius: 20px;
+    padding:6px 16px;
+    border-radius:20px;
     white-space:nowrap;
 }
 
@@ -62,7 +99,7 @@
 {
     background:transparent;
     border:none;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .nav-search
@@ -102,7 +139,7 @@
 {
     display:flex;
     position:relative;
-    align-items: center;
+    align-items:center;
 }
 
 .user-account-logo
@@ -129,22 +166,22 @@
     color:white;
 }
 
-.settings 
+.settings
 {
     position:absolute;
-    top:100%;           
-    right:0;             
+    top:100%;
+    right:0;
     background-color:rgba(0, 0, 0, 0.9);
     border:1px solid #333;
     padding:10px 0;
     width:150px;
-    display:none;         
+    display:none;
     z-index:101;
     gap:20px;
     border-radius:10px;
 }
 
-.settings ul 
+.settings ul
 {
     list-style:none;
 }
@@ -156,15 +193,14 @@
     display:block;
     padding:8px 15px;
     font-size:15px;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
-.settings a:hover 
+.settings a:hover
 {
     text-decoration:underline;
 }
 
-.account-related:hover .settings 
+.account-related:hover .settings
 {
-    display:block; 
+    display:block;
 }
