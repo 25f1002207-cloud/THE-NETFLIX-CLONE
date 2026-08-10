@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Main FAQ section */
+
+.faq-section {
+    width: 100%;
+    background-color: #000;
+    padding: 14px 20px 50px;
+}
+
+
+/* Container */
+
+.faq-container {
+    width: 100%;
+    max-width: 1056px;
+    margin: 0 auto;
+}
+
+
+/* Heading */
+
+.faq-container h2 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+
+/* FAQ box */
+
+.faq-box {
+    width: 100%;
+}
+
+
+/* Individual FAQ */
+
+.faq-box details {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+
+/* Question */
+
+.faq-box summary {
+    position: relative;
+
+    width: 100%;
+    min-height: 84px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 70px 20px 24px;
+
+    background-color: #2d2d2d;
+    color: #fff;
+
+    font-size: 24px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    transition: background-color 0.2s ease;
+}
+
+
+/* Remove default arrow */
+
+.faq-box summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-box summary::marker {
+    display: none;
+}
+
+
+/* Plus icon */
+
+.faq-box summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 24px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #fff;
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+
+/* Hover */
+
+.faq-box summary:hover {
+    background-color: #414141;
+}
+
+
+/* Answer */
+
+.faq-answer {
+    background-color: #2d2d2d;
+    color: #fff;
+
+    margin-top: 2px;
+
+    padding: 24px;
+
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* Change + into × when opened */
+
+.faq-box details[open] summary::after {
+    content: "×";
+    font-size: 42px;
+}
