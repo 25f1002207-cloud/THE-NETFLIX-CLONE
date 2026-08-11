@@ -6,6 +6,8 @@
 
 html {
     scroll-behavior: smooth;
+    content-visibility: auto;
+    contain-intrinsic-size: 800px;
 }
 
 body {
